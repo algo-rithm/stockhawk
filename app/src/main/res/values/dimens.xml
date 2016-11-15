@@ -1,0 +1,39 @@
+<resources>
+  <!-- Default screen margins, per the Android Design guidelines. -->
+  <dimen name="activity_horizontal_margin">16dp</dimen>
+  <dimen name="activity_vertical_margin">16dp</dimen>
+
+  <dimen name="stockhawk_std_margin">11dp</dimen>
+  <dimen name="stockhawk_fab_margin">16dp</dimen>
+  <dimen name="stockhawk_main_list_margin">16dp</dimen>
+  <dimen name="stockhawk_main_list_layout_height">72dp</dimen>
+  <dimen name="stockhawk_main_list_bidprice_padding">10sp</dimen>
+  <dimen name="stockhawk_main_list_pill_padding">3dp</dimen>
+
+  <dimen name="stockhawk_frag_padding">20dp</dimen>
+  <dimen name="stockhawk_frag_chart_height">250dp</dimen>
+  <dimen name="stockhawk_frag_chart_width">300dp</dimen>
+  <dimen name="stockhawk_frag_button_height">27dp</dimen>
+  <dimen name="stockhawk_frag_button_width">45dp</dimen>
+  <dimen name="stockhawk_frag_button_textSize">12sp</dimen>
+  <dimen name="stockhawk_frag_label_land_textSixe">10sp</dimen>
+  <dimen name="stockhawk_frag_label_port_textSixe">12sp</dimen>
+  <dimen name="stockhawk_frag_port_textSize">14sp</dimen>
+
+  <dimen name="stockhawk_list_padding">5dp</dimen>
+  <dimen name="stockhawk_list_marginLeft">50dp</dimen>
+  <dimen name="stockhawk_list_marginLeftB">100dp</dimen>
+  <dimen name="stockhawk_list_marginLeftC">140dp</dimen>
+  <dimen name="stockhawk_list_textSize">12sp</dimen>
+  <dimen name="stockhawk_list_labeltextSize">14sp</dimen>
+
+  <dimen name="stockhawk_widget_padding">16dp</dimen>
+  <dimen name="stockhawk_widget_list_height">72dp</dimen>
+  <dimen name="stockhawk_widget_bid_padding_right">10sp</dimen>
+  <dimen name="stockhawk_widget_pill_padding">3dp</dimen>
+
+
+  <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+  <dimen name="navigation_drawer_width">240dp</dimen>
+</resources>

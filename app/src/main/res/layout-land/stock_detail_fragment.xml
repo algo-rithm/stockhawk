@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/stockhawk_frag_padding" >
+
+    <com.db.chart.view.LineChartView
+        android:layout_width="@dimen/stockhawk_frag_chart_width"
+        android:layout_height="match_parent"
+        android:id="@+id/chart" />
+
+    <LinearLayout
+        android:id="@+id/button_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/chart"
+        android:layout_toEndOf="@id/chart"
+        android:layout_marginLeft="@dimen/stockhawk_std_margin"
+        android:layout_marginStart="@dimen/stockhawk_std_margin"
+        android:layout_marginBottom="@dimen/stockhawk_std_margin"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <Button
+            android:layout_width="@dimen/stockhawk_frag_button_width"
+            android:layout_height="@dimen/stockhawk_frag_button_height"
+            android:id="@+id/button_7day"
+            android:text="@string/seven_day"
+            android:background="@drawable/history_shape"
+            android:textSize="@dimen/stockhawk_frag_button_textSize"
+            android:layout_weight="0.6"
+            android:contentDescription="@string/cd_7"
+            android:focusable="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"/>
+
+        <Button
+            android:layout_width="@dimen/stockhawk_frag_button_width"
+            android:layout_height="@dimen/stockhawk_frag_button_height"
+            android:id="@+id/button_1month"
+            android:text="@string/one_month"
+            android:textSize="@dimen/stockhawk_frag_button_textSize"
+            android:background="@drawable/history_shape"
+            android:layout_weight="0.6"
+            android:contentDescription="@string/cd_30"
+            android:focusable="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"/>
+
+        <Button
+            android:layout_width="@dimen/stockhawk_frag_button_width"
+            android:layout_height="@dimen/stockhawk_frag_button_height"
+            android:id="@+id/button_3month"
+            android:text="@string/three_months"
+            android:background="@drawable/history_shape"
+            android:textSize="@dimen/stockhawk_frag_button_textSize"
+            android:layout_weight="0.6"
+            android:contentDescription="@string/cd_90"
+            android:focusable="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"/>
+
+        <Button
+            android:layout_width="@dimen/stockhawk_frag_button_width"
+            android:layout_height="@dimen/stockhawk_frag_button_height"
+            android:id="@+id/button_6month"
+            android:text="@string/six_months"
+            android:textSize="@dimen/stockhawk_frag_button_textSize"
+            android:background="@drawable/history_shape"
+            android:layout_weight="0.6"
+            android:contentDescription="@string/cd_180"
+            android:focusable="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"/>
+        <Button
+            android:layout_width="@dimen/stockhawk_frag_button_width"
+            android:layout_height="@dimen/stockhawk_frag_button_height"
+            android:id="@+id/button_1year"
+            android:text="@string/one_year"
+            android:textSize="@dimen/stockhawk_frag_button_textSize"
+            android:background="@drawable/history_shape"
+            android:layout_weight="0.6"
+            android:contentDescription="@string/cd_365"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/info_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_row"
+        android:layout_toRightOf="@id/chart"
+        android:layout_toEndOf="@id/chart"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/stockhawk_std_margin"
+        android:orientation="horizontal"
+        android:weightSum="5">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainText"
+        android:layout_weight="1"
+        android:text="@string/frag_symbol_label"
+        android:textSize="@dimen/stockhawk_frag_label_land_textSixe"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_detail_symbol"
+        android:layout_weight="1" />
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bidText"
+        android:layout_weight="1"
+        android:text="@string/frag_bid_label"
+        android:textSize="@dimen/stockhawk_frag_label_land_textSixe"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_detail_bid"
+        android:layout_weight="1" />
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info_row"
+        android:layout_toRightOf="@id/chart"
+        android:layout_toEndOf="@id/chart"
+        android:layout_marginLeft="@dimen/stockhawk_std_margin"
+        android:layout_marginStart="@dimen/stockhawk_std_margin"
+        android:id="@+id/stock_history_list"
+        android:background="#dddddd" />
+
+
+</RelativeLayout>
